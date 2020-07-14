@@ -26,7 +26,6 @@ public class YandexMainPage {
 
 
     public void selectTypeMenu(String menu) {
-       // getWait().until(ExpectedConditions.visibilityOf(mainMenu.findElement(By.xpath(".//a[contains(text(),'" + menu + "')]"))))
         if (mainMenu.findElement(By.xpath(".//a[contains(text(),'" + menu + "')]")).isDisplayed()){
             mainMenu.findElement(By.xpath(".//a[contains(text(),'" + menu + "')]")).click();
         }else if (mainMenu.findElement(By.xpath(".//div[contains(text(),'" + menu + "')]]")).isDisplayed()){
